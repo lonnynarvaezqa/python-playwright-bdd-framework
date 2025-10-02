@@ -21,7 +21,7 @@ Homebrew (macOS/Linux): Required for installing Allure CLI.
 
 🚀 Installation & Setup
 1. Clone the Repository
-git clone [YOUR_REPOSITORY_URL]
+git clone (https://github.com/lonnynarvaezqa/python-playwright-bdd-framework)
 cd automation_project
 
 2. Set Up the Virtual Environment
