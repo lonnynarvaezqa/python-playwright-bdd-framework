@@ -4,36 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98dde478-65b7-42f9-bbd6-b4cee52ecb17" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/automation_project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/framework_diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/Test_Cases.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/Test_Plan.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/Test_Strategy.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/environment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/file_upload.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/login.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/navigation.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/steps/file_upload_steps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/steps/login_steps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/steps/navigation_steps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/elements/file_upload_elements.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/elements/generic_page_elements.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/elements/home_page_elements.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/elements/login_page_elements.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/file_upload_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/home_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run_tests.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/my_test_file.txt" afterDir="false" />
-    </list>
+    <list default="true" id="98dde478-65b7-42f9-bbd6-b4cee52ecb17" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +20,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/lonnynarvaezqa/python-playwright-bdd-framework.git",
+    "accountId": "75fcb3fa-5747-470a-b81a-77c14f439786"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -264,7 +241,7 @@
       <workItem from="1759272186984" duration="1036000" />
       <workItem from="1759273235550" duration="3336000" />
       <workItem from="1759328038839" duration="2518000" />
-      <workItem from="1759418817441" duration="5566000" />
+      <workItem from="1759418817441" duration="5943000" />
     </task>
     <servers />
   </component>
