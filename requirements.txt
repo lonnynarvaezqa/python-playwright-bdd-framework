@@ -1,0 +1,4 @@
+# requirements.txt
+playwright
+behave
+behave-html-formatter
