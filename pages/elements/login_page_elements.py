@@ -1,32 +1,20 @@
-# pages/elements/login_page_elements.py
-
 class LoginPageElements:
-    """Clase que contiene todos los selectores de la página de Login."""
+    """Class containing all selectors for the Login page."""
 
-    # Campo de Nombre de Usuario
+    # Username input field
     USERNAME_INPUT = "#username"
 
-    # Campo de Contraseña
+    # Password input field
     PASSWORD_INPUT = "#password"
 
-    # Botón de Login
+    # Login button
     LOGIN_BUTTON = ".fa.fa-2x.fa-sign-in"
 
-    # Mensaje de Estado (Éxito o Fallo)
+    # Status message (Success or Failure)
     STATUS_MESSAGE = "#flash"
 
-    # Botón de Logout (para verificar la redirección a secure area)
+    # Logout button (found on the secure area page)
     LOGOUT_BUTTON = "#content > div > a"
 
-    # URL esperada después del login exitoso
+    # Expected URL after successful login
     SECURE_AREA_URL = "https://the-internet.herokuapp.com/secure"
-
-    # Botón de Logout (ya lo teníamos, solo lo mantenemos)
-    LOGOUT_BUTTON = "#content > div > a"
-
-    # Campo de Contraseña (ya lo teníamos)
-    PASSWORD_INPUT = "#password"
-
-    # URL esperada después del login exitoso (ya lo teníamos)
-    SECURE_AREA_URL = "https://the-internet.herokuapp.com/secure"
-

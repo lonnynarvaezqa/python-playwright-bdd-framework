@@ -1,7 +1,6 @@
-# features/environment.py (Versión Limpia y Simple para login)
 from playwright.sync_api import sync_playwright
 
-# Usamos before_all/after_all para la instancia principal de Playwright
+# Use before_all/after_all for the main Playwright instance
 def before_all(context):
     context.p = sync_playwright().start()
 
@@ -9,15 +8,15 @@ def after_all(context):
     if hasattr(context, 'p') and context.p:
         context.p.stop()
 
-# Abre un nuevo 'browser' antes de cada escenario
+# Open a new 'browser' before each scenario
 def before_scenario(context, scenario):
-    # La clave es lanzar el navegador
+    # Launch the browser and save it to context
     context.browser = context.p.chromium.launch(headless=False)
-    # y crear la 'page' dentro del contexto
+    # Create the 'page' within the context
     context.page = context.browser.new_page()
 
-# Cierra solo el 'browser' después de cada escenario
+# Close only the 'browser' after each scenario
 def after_scenario(context, scenario):
-    # Cierra context.browser, NO context.browser_context
+    # Close context.browser
     if hasattr(context, 'browser') and context.browser:
         context.browser.close()

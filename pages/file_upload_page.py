@@ -1,23 +1,22 @@
-# pages/file_upload_page.py
 from pages.base_page import BasePage
 from pages.elements.file_upload_elements import FileUploadElements
 
 class FileUploadPage(BasePage):
 
     def navigate(self):
-        """Navega a la página de subida de archivos."""
+        """Navigates to the file upload page."""
         self.page.goto(FileUploadElements.UPLOAD_URL)
 
     def select_file(self, file_path):
-        """Selecciona un archivo usando el selector de entrada de archivo.
-        Playwright maneja la interacción con el diálogo del OS de forma nativa.
+        """Selects a file using the file input selector.
+        Playwright handles the OS dialog interaction natively.
         """
         self.page.set_input_files(FileUploadElements.FILE_INPUT, file_path)
 
     def click_upload_button(self):
-        """Hace clic en el botón de subir."""
+        """Clicks the upload button."""
         self.page.click(FileUploadElements.UPLOAD_BUTTON)
 
     def get_uploaded_file_name(self):
-        """Retorna el nombre del archivo subido que se muestra en la página de resultados."""
+        """Returns the name of the uploaded file displayed on the results page."""
         return self.page.inner_text(FileUploadElements.UPLOADED_FILE_NAME)

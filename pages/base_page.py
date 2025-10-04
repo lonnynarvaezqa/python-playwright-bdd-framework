@@ -1,6 +1,4 @@
-# pages/base_page.py
-
 class BasePage:
     def __init__(self, page):
-        # 'page' es la instancia de playwright.sync_api.Page
+        # 'page' is the playwright.sync_api.Page instance
         self.page = page

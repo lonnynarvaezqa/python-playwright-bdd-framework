@@ -1,16 +1,14 @@
-# pages/elements/file_upload_elements.py
-
 class FileUploadElements:
-    """Selectores para la página de Subida de Archivos."""
+    """Selectors for the File Upload page."""
 
-    # Campo de entrada de archivo. Este es el selector clave.
+    # File input field. This is the key selector.
     FILE_INPUT = "#file-upload"
 
-    # Botón para iniciar la subida (Submit)
+    # Button to start the upload (Submit)
     UPLOAD_BUTTON = "#file-submit"
 
-    # Elemento que muestra el nombre del archivo subido con éxito
+    # Element that displays the name of the successfully uploaded file
     UPLOADED_FILE_NAME = "#uploaded-files"
 
-    # URL de la página de File Upload
+    # URL of the File Upload page
     UPLOAD_URL = "https://the-internet.herokuapp.com/upload"

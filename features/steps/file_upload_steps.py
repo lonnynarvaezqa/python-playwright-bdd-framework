@@ -1,8 +1,10 @@
-# features/steps/file_upload_steps.py
 from behave import given, when, then
 from pages.file_upload_page import FileUploadPage
 from playwright.sync_api import expect
-import os  # Necesitas importar 'os' para manejar rutas de archivos
+import os
+from pages.elements.file_upload_elements import FileUploadElements
+from pages.login_page import LoginPage # Needed for the shared step
+
 
 
 @given('the user is on the File Upload page')
@@ -10,16 +12,18 @@ def step_impl(context):
     context.file_upload_page = FileUploadPage(context.page)
     context.file_upload_page.navigate()
     context.page.wait_for_load_state("domcontentloaded")
+    from pages.login_page import LoginPage
+    context.login_page = LoginPage(context.page)
 
 
 @when('the user selects a file named "{file_name}"')
 def step_impl(context, file_name):
-    # Construye la ruta completa al archivo de prueba
+    # Construct the full path to the test file
     current_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.abspath(os.path.join(current_dir, '..', '..'))
     file_path = os.path.join(project_root, 'test_data', file_name)
 
-    # Llama al método del POM para subir el archivo
+    # Call the POM method to select and upload the file
     context.file_upload_page.select_file(file_path)
 
 

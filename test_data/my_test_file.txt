@@ -1,2 +1,1 @@
-# Contenido de test_data/my_test_file.txt
-Esto es un archivo de prueba.
+This is a test file.

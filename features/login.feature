@@ -1,7 +1,5 @@
-# features/login.feature
 Feature: Secure Login Functionality
 
-  # 1. Caso de éxito (Happy Path)
   Scenario: Successful login with valid credentials
     Given the user is on the login page
     When the user enters "tomsmith" as username and "SuperSecretPassword!" as password
@@ -9,14 +7,12 @@ Feature: Secure Login Functionality
     Then the user should be redirected to the secure area
     And a message containing "You logged into a secure area!" should be displayed
 
-  # 2. Caso de fallo por usuario incorrecto
   Scenario: Failed login due to invalid username
     Given the user is on the login page
     When the user enters "usuario_invalido" as username and "SuperSecretPassword!" as password
     And the user clicks the login button
     Then a message containing "Your username is invalid!" should be displayed
 
-  # 3. Caso de fallo por campo vacío (Falta de Contraseña)
   Scenario: Failed login due to empty password field
     Given the user is on the login page
     When the user enters "tomsmith" as username and "empty_value" as password
